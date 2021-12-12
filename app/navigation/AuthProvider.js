@@ -1,20 +1,47 @@
-import auth from '@react-native-firebase/auth';
+import React,{createContext, useState} from "react";
+import auth from "@react-native-firebase/auth";
 
-import auth from '@react-native-firebase/auth';
+export const AuthContext = createContext();
 
-auth()
-  .createUserWithEmailAndPassword('jane.doe@example.com', 'SuperSecretPassword!')
-  .then(() => {
-    console.log('User account created & signed in!');
-  })
-  .catch(error => {
-    if (error.code === 'auth/email-already-in-use') {
-      console.log('That email address is already in use!');
-    }
+export const AuthProvider = ({children}) =>{
+    const [user, setUser] = useState(null);
 
-    if (error.code === 'auth/invalid-email') {
-      console.log('That email address is invalid!');
-    }
+    return(
+        <AuthContext.Provider
+            value = {{
+                user,
+                setUser,
 
-    console.error(error);
-  });
+                login: async (email, password) =>{
+                    try {
+                        await auth(). signInWithEmailAndPassword( email, password)
+                    }
+                    catch(e){
+                        console.log (e);
+                    }
+                },
+
+                register: async (email,password) =>{
+                    try {
+                        await auth(). createUserWithEmailAndPassword( email, password)
+                    }
+                    catch(e){
+                        console.log (e);
+                    }
+                },
+
+                logout: async () =>{
+                    try {
+                        await auth(). signOut( email, password)
+                    }
+                    catch(e){
+                        console.log (e);
+                    }
+                },
+
+
+            }} >
+                {children}
+        </AuthContext.Provider>
+    )
+}

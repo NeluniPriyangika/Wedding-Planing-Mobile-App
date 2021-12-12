@@ -19,7 +19,7 @@ function Vendors() {
           </View>
           <View style={styles.container2} >
             <Image style={styles.image3} source={require('../assets/imges/pexels-marina-abrosimova-10193997.jpg')}/>
-            <Text style={styles.text1}>Find Fashion Designers and Salons</Text>
+            <Text style={styles.text1}>Find Fashion Designers           and Salons</Text>
           </View>
           <View style={styles.container2} >
             <Image style={styles.image3} source={require('../assets/imges/pexels-amar-saleem-70441.jpg')}/>
