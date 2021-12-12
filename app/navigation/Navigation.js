@@ -10,6 +10,7 @@ import RegisterPage from "../components/RegisterPage";
 import Vendors from "../components/Vendors";
 import MenuScreen from "../components/MenuScreen";
 import Photographers from "../components/Photographers";
+import FashionDesingners from "../components/FashionDesigners";
 
 
 
@@ -21,7 +22,7 @@ function App() {
 
     return (
       <NavigationContainer>
-        <Stack.Navigator headerMode={{}} initialRouteName="FirstScreen">
+        <Stack.Navigator headerMode={{}} initialRouteName="FashionDesigners">
           <Stack.Screen name="FirstScreen" component={FirstScreen} />
           <Stack.Screen name="SecondScreen" component={SecondScreen} />
           <Stack.Screen name="ThirdScreen" component={ThirdScreen}  />
@@ -31,6 +32,7 @@ function App() {
           <Stack.Screen name="MenuScreen" component={MenuScreen} />
           <Stack.Screen name="Vendors" component={Vendors} />
           <Stack.Screen name="Photographers" component={Photographers} />
+          <Stack.Screen name="FashionDesigners" component={FashionDesingners} />
           
         </Stack.Navigator>
       </NavigationContainer>
