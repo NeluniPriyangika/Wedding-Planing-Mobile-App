@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Alert, View, Image, TouchableOpacity,Text,TextInput, ScrollView } from 'react-native';
 
-function RegisterPage () {
+function RegisterPage ({navigation}) {
    
         return (
           <ScrollView>
@@ -29,9 +29,10 @@ function RegisterPage () {
                 placeholder="Password"
               />
 
-              <View style={styles.button1}>
-                  <Text style={styles.buttontext}>Login</Text>
-              </View> 
+              <TouchableOpacity style={styles.button1}
+                  onPress={() => navigation.navigate('LoginPage1')}>
+                  <Text style={styles.buttontext}>Sing Up</Text>
+              </TouchableOpacity> 
               <Text style={styles.text1}>Sign up with</Text>
 
               <View style ={styles.container1}>

@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Image,Text,TextInput } from 'react-native';
+import { StyleSheet, View, Image,Text,TextInput, TouchableOpacity} from 'react-native';
 
-function LoginPage1(){
+
+function LoginPage1({navigation}){
    
         return (
             <View style={styles.container}>
@@ -17,9 +18,10 @@ function LoginPage1(){
                 placeholder="Password"
               />
 
-              <View style={styles.button1}>
+              <TouchableOpacity style={styles.button1}
+                  onPress={() => navigation.navigate('MenuScreen')}>
                   <Text style={styles.buttontext}>Login</Text>
-              </View> 
+              </TouchableOpacity> 
               <Text style={styles.text1}>Forgod Password ?</Text>
             </View>
 

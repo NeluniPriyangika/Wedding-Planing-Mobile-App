@@ -5,7 +5,8 @@ function SecondScreen ({navigation}) {
 
         
         return (
-            <View style={styles.container}>
+            <TouchableOpacity style={styles.container}
+                onPress={() => navigation.navigate('ThirdScreen')}>
               <Image source={require('../assets/imges/4180449.png')} style={styles.image1} />
               
                 <Text style={styles.textstyle1}>HappyWed is an all-in-one wedding planing app
@@ -32,7 +33,7 @@ function SecondScreen ({navigation}) {
                 
                 
 
-            </View>
+            </TouchableOpacity>
         );
 }
 export default SecondScreen;

@@ -1,10 +1,12 @@
 import React from 'react';
-import {View,Image, StyleSheet,Text} from 'react-native';
+import {View,Image, StyleSheet,Text,TouchableOpacity} from 'react-native';
 
-function ThirdScreen () {
+
+function ThirdScreen ({navigation}) {
         return (
-            <View style={styles.container}>
-              <Image source={require('../assets/imges/Wedding-Planner.jpg')} style={styles.image1} />
+            <TouchableOpacity style={styles.container}
+                onPress={() => navigation.navigate('FourthScreen')}>
+                <Image source={require('../assets/imges/Wedding-Planner.jpg')} style={styles.image1} />
               
                 <Text style={styles.textstyle1}>You can find perfect Wedding Vendors for your wedding</Text>
                 <View style={styles.container0}>
@@ -13,18 +15,21 @@ function ThirdScreen () {
                   <View style= {styles.container2}></View>
                 </View>
 
-                <View style={styles.button1}>
+                <TouchableOpacity 
+                  onPress={() => navigation.navigate('LoginPage1')}
+                  style={styles.button1}>
                   <Text style={styles.buttontext}>Login</Text>
-                </View> 
+                </TouchableOpacity> 
 
-                <View style={styles.button2}>
+                <TouchableOpacity 
+                onPress={() => navigation.navigate('RegisterPage')}
+                style={styles.button2}>
+                <Text style={styles.buttontext}>Register</Text>
                   
-                    <Text style={styles.buttontext}>Register</Text>
-                  
-                </View>         
+                </TouchableOpacity>         
             
 
-            </View>
+            </TouchableOpacity>
         );
     }
 export default ThirdScreen;

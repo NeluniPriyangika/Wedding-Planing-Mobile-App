@@ -1,34 +1,38 @@
 import React from 'react';
-import {View,Image, StyleSheet,Text} from 'react-native';
+import {View,Image, StyleSheet,Text,TouchableOpacity} from 'react-native';
 
-function FourthScreen(){
+
+function ThirdScreen ({navigation}) {
         return (
-            <View style={styles.container}>
-              <Image source={require('../assets/imges/3330672.jpg')} style={styles.image1} />
+            <TouchableOpacity style={styles.container}
+                onPress={() => navigation.navigate('ThirdScreen')}>
+                <Image source={require('../assets/imges/3330672.jpg')} style={styles.image1} />
               
-                <Text style={styles.textstyle1}>Manage your Beget properly for your especial day 
-                </Text>
+                <Text style={styles.textstyle1}>You can find perfect Wedding Vendors for your wedding</Text>
                 <View style={styles.container0}>
                   <View style= {styles.container1}></View>
                   <View style= {styles.container2}></View>
                   <View style= {styles.container2}></View>
                 </View>
 
-                <View style={styles.button1}>
+                <TouchableOpacity 
+                  onPress={() => navigation.navigate('LoginPage1')}
+                  style={styles.button1}>
                   <Text style={styles.buttontext}>Login</Text>
-                </View> 
+                </TouchableOpacity> 
 
-                <View style={styles.button2}>
+                <TouchableOpacity 
+                onPress={() => navigation.navigate('RegisterPage')}
+                style={styles.button2}>
+                <Text style={styles.buttontext}>Register</Text>
                   
-                    <Text style={styles.buttontext}>Register</Text>
-                  
-                </View>         
+                </TouchableOpacity>         
             
 
-            </View>
+            </TouchableOpacity>
         );
     }
-export default FourthScreen;
+export default ThirdScreen;
 
 const styles = StyleSheet.create({
     container:{
@@ -77,6 +81,8 @@ const styles = StyleSheet.create({
         marginBottom:32,
         alignSelf:'center',
         fontSize:23,
+        marginLeft:10,
+        
       }, 
     
       button1:{
