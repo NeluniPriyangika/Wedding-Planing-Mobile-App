@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, View, Image,Text,TextInput, TouchableOpacity} from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 
 
 function LoginPage1({navigation}){
    
         return (
+          <ScrollView>
             <View style={styles.container}>
               <View style= {styles.container0}>
                 <Image style={styles.image2} source={require('../assets/imges/white.png')}/>
@@ -24,6 +26,7 @@ function LoginPage1({navigation}){
               </TouchableOpacity> 
               <Text style={styles.text1}>Forgod Password ?</Text>
             </View>
+          </ScrollView>
 
         );
 }
@@ -33,7 +36,7 @@ export default LoginPage1;
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    backgroundColor:'black',
+    backgroundColor:'#6E0606',
   },
 
    container0:{
@@ -42,8 +45,8 @@ const styles = StyleSheet.create({
   },
   
   image1:{
-    height:150,
-    width:150,
+    height:200,
+    width:200,
     alignSelf:"center",
     marginTop:29,
     borderColor:'white',
@@ -62,10 +65,10 @@ const styles = StyleSheet.create({
 
   input1: {
 
-    marginTop:70,
+    marginTop:60,
     backgroundColor: "white",
-    width:300,
-    height:55,
+    width:330,
+    height:60,
     borderRadius:20,
     alignSelf:"center",
     padding:20,
@@ -78,8 +81,8 @@ const styles = StyleSheet.create({
 
     marginTop:30,
     backgroundColor: "white",
-    width:300,
-    height:55,
+    width:330,
+    height:60,
     borderRadius:20,
     alignSelf:"center",
     padding:20,
@@ -91,18 +94,18 @@ const styles = StyleSheet.create({
     width:250,
     height:50,
     marginTop:50,
-    backgroundColor:'#40E0D0',
+    backgroundColor:'#556080',
     borderRadius:500,
     alignSelf:"center",
-    borderColor:'#848482',
-    borderWidth:3,
+    borderColor:'#FFFFFF',
+    borderWidth:4,
    
   },
 
   buttontext:{
     fontStyle:'italic',
-    fontSize:20,
-    marginTop:10,
+    fontSize:25,
+    marginTop:5,
     justifyContent:"center", 
     alignSelf:"center", 
     color:'black'  

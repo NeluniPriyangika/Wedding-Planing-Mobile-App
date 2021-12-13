@@ -40,7 +40,7 @@ function RegisterPage ({navigation}) {
                 <Image style={styles.image4} source={require('../assets/imges/google.png')}/>
               </View>
             </View>
-            </ScrollView>
+          </ScrollView>
 
 
         );
@@ -51,7 +51,7 @@ export default RegisterPage;
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    backgroundColor:"black",
+    backgroundColor:"#6E0606",
   },
 
    container0:{
@@ -129,10 +129,10 @@ const styles = StyleSheet.create({
     width:250,
     height:50,
     marginTop:50,
-    backgroundColor:"#40E0D0",
+    backgroundColor:"#556080",
     borderRadius:500,
     alignSelf:"center",
-    borderColor:"#848482",
+    borderColor:"white",
     borderWidth:3,
    
   },
