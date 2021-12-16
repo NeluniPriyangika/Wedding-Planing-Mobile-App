@@ -12,6 +12,7 @@ import MenuScreen from "../components/MenuScreen";
 import Photographers from "../components/Photographers";
 import FashionDesingners from "../components/FashionDesigners";
 import AddTask from "../components/AddTask";
+import ManageBudget from "../components/ManageBdget";
 
 
 
@@ -23,7 +24,7 @@ function App() {
 
     return (
       <NavigationContainer>
-        <Stack.Navigator headerMode={{}} initialRouteName="AddTask">
+        <Stack.Navigator headerMode={{}} initialRouteName="ManageBudget">
           <Stack.Screen name="FirstScreen" component={FirstScreen} />
           <Stack.Screen name="SecondScreen" component={SecondScreen} />
           <Stack.Screen name="ThirdScreen" component={ThirdScreen}  />
@@ -35,6 +36,7 @@ function App() {
           <Stack.Screen name="Photographers" component={Photographers} />
           <Stack.Screen name="FashionDesigners" component={FashionDesingners} />
           <Stack.Screen name="AddTask" component={AddTask} />
+          <Stack.Screen name="ManageBudget" component={ManageBudget} />
           
         </Stack.Navigator>
       </NavigationContainer>
