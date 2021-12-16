@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { StyleSheet, Alert, View, Image, TouchableOpacity,Text,TextInput, ScrollView } from 'react-native';
+import {AuthContext} from '../navigation/AuthProvider'
+
 
 function RegisterPage ({navigation}) {
-   
+
+   const[email,setEmail]=useState();
+   const[password,setPassword]=useState();
+
+
+   const {register} = useContext(AuthContext)
         return (
           <ScrollView>
             <View style={styles.container}>
@@ -30,7 +37,7 @@ function RegisterPage ({navigation}) {
               />
 
               <TouchableOpacity style={styles.button1}
-                  onPress={() => navigation.navigate('LoginPage1')}>
+                  onPress={() => register(email,password)}>
                   <Text style={styles.buttontext}>Sing Up</Text>
               </TouchableOpacity> 
               <Text style={styles.text1}>Sign up with</Text>

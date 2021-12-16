@@ -14,7 +14,7 @@ export const AuthProvider = ({children}) =>{
 
                 login: async (email, password) =>{
                     try {
-                        await auth(). signInWithEmailAndPassword( email, password)
+                        await auth().signInWithEmailAndPassword( email, password)
                     }
                     catch(e){
                         console.log (e);
@@ -23,7 +23,7 @@ export const AuthProvider = ({children}) =>{
 
                 register: async (email,password) =>{
                     try {
-                        await auth(). createUserWithEmailAndPassword( email, password)
+                        await auth().createUserWithEmailAndPassword( email, password)
                     }
                     catch(e){
                         console.log (e);
@@ -32,7 +32,7 @@ export const AuthProvider = ({children}) =>{
 
                 logout: async () =>{
                     try {
-                        await auth(). signOut( email, password)
+                        await auth().signOut( email, password)
                     }
                     catch(e){
                         console.log (e);
