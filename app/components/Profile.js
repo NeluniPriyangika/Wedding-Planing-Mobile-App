@@ -5,44 +5,29 @@ import {auth} from './firebase'
 
 
 function Profile ({}) {
-  
-  
         return (
           
             <View style={styles.container}>
-              <View style= {styles.container0}>
-                <Image style={styles.image2} source={require('../assets/imges/white.png')}/>
-              </View>
-
-              <Image style={styles.image1} source={require('../assets/imges/1629171277964.jpg')}/>
-              <TextInput style={styles.input1} 
-                placeholder="User name"
-              />
-              <TextInput style={styles.input2} 
-                placeholder="Partner name"
-              />
-
-              <TextInput style={styles.input2} 
-                placeholder="Wedding date"
-              />
-
-              <TextInput style={styles.input2} 
-                placeholder="Email address"
-                
-                
-              />
-              
-
-              <TouchableOpacity style={styles.button1}>
-                  
-                  <Text style={styles.buttontext}>Sign Out</Text>
-              </TouchableOpacity>
-            </View> 
-              
-
-              
-         
-
+                <View style= {styles.container0}>
+                    <Image style={styles.image2} source={require('../assets/imges/white.png')}/>
+                </View>
+                <Image style={styles.image1} source={require('../assets/imges/1629171277964.jpg')}/>
+                <TextInput style={styles.input1} 
+                    placeholder="User name"
+                />
+                <TextInput style={styles.input2} 
+                    placeholder="Partner name"
+                />
+                <TextInput style={styles.input2} 
+                    placeholder="Wedding date"
+                />
+                <TextInput style={styles.input2} 
+                    placeholder="Email address"    
+                />
+                <TouchableOpacity style={styles.button1}>    
+                    <Text style={styles.buttontext}>Sign Out</Text>
+                </TouchableOpacity>
+            </View>          
         );
 }
 

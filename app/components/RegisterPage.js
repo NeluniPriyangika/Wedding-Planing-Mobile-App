@@ -55,6 +55,7 @@ function RegisterPage ({navigation}) {
 
               <TouchableOpacity style={styles.button1}
                   onPress={()=>{registration}}>
+                  
                   <Text style={styles.buttontext}>Sing Up</Text>
               </TouchableOpacity> 
               <Text style={styles.text1}>Sign up with</Text>
