@@ -15,7 +15,7 @@ function WeddingDecorations() {
                 <View style= {styles.container0} >
                 <Image style={styles.container2} source={require('../assets/imges/wedding-plan-massachusetts-1080x675.jpg')}/>
                 <View style={styles.container3}>
-                    <Text style={styles.textstyle2}>Info :- Banchi photography,    
+                    <Text style={styles.textstyle2}>Info :- Lassna Wedding,    
                                                             Nugegoda,
                                                             Colombo .</Text>
                     <Text style={styles.textstyle2}>Minimum cost :- RS 20000</Text>
@@ -28,8 +28,8 @@ function WeddingDecorations() {
                 <View style= {styles.container0} >
                 <Image style={styles.container2} source={require('../assets/imges/pexels-secret-garden-931166.jpg')}/>
                 <View style={styles.container3}>
-                    <Text style={styles.textstyle2}>Info :- Banchi photography,    
-                                                            Nugegoda,
+                    <Text style={styles.textstyle2}>Info :- Flora Flower Shop,    
+                                                            Maharagama,
                                                             Colombo .</Text>
                     <Text style={styles.textstyle2}>Minimum cost :- RS 20000</Text>
                     <Text style={styles.textstyle2}>Contact us :-0776985441</Text>
@@ -41,8 +41,8 @@ function WeddingDecorations() {
                 <View style= {styles.container0} >
                 <Image style={styles.container2} source={require('../assets/imges/119bb609825738800df57b140df9f961.jpg')}/>
                 <View style={styles.container3}>
-                    <Text style={styles.textstyle2}>Info :- Banchi photography,    
-                                                            Nugegoda,
+                    <Text style={styles.textstyle2}>Info :- Flora Flower Shop,    
+                                                            Maharagama,
                                                             Colombo .</Text>
                     <Text style={styles.textstyle2}>Minimum cost :- RS 20000</Text>
                     <Text style={styles.textstyle2}>Contact us :-0776985441</Text>
@@ -54,7 +54,7 @@ function WeddingDecorations() {
                 <View style= {styles.container0} >
                 <Image style={styles.container2} source={require('../assets/imges/pexels-asad-photo-maldives-169198.jpg')}/>
                 <View style={styles.container3}>
-                    <Text style={styles.textstyle2}>Info :- Banchi photography,    
+                    <Text style={styles.textstyle2}>Info :- Lassna Wedding,    
                                                             Nugegoda,
                                                             Colombo .</Text>
                     <Text style={styles.textstyle2}>Minimum cost :- RS 20000</Text>
@@ -67,8 +67,8 @@ function WeddingDecorations() {
                 <View style= {styles.container0} >
                 <Image style={styles.container2} source={require('../assets/imges/live_5b17e0aa670a8_Shortlisting.jpg')}/>
                 <View style={styles.container3}>
-                    <Text style={styles.textstyle2}>Info :- Banchi photography,    
-                                                            Nugegoda,
+                    <Text style={styles.textstyle2}>Info :- Flora Flower Shop,    
+                                                            Maharagama,
                                                             Colombo .</Text>
                     <Text style={styles.textstyle2}>Minimum cost :- RS 20000</Text>
                     <Text style={styles.textstyle2}>Contact us :-0776985441</Text>
@@ -80,7 +80,7 @@ function WeddingDecorations() {
                 <View style= {styles.container0} >
                 <Image style={styles.container2} source={require('../assets/imges/indian-wedding-decorations-event-park-bangalore-the-perfect-stage.jpg')}/>
                 <View style={styles.container3}>
-                    <Text style={styles.textstyle2}>Info :- Banchi photography,    
+                    <Text style={styles.textstyle2}>Info :- Lassna Wedding,    
                                                             Nugegoda,
                                                             Colombo .</Text>
                     <Text style={styles.textstyle2}>Minimum cost :- RS 20000</Text>
@@ -93,8 +93,8 @@ function WeddingDecorations() {
                 <View style= {styles.container0} >
                 <Image style={styles.container2} source={require('../assets/imges/71ansB7QGaL._AC_SL1010_.jpg')}/>
                 <View style={styles.container3}>
-                    <Text style={styles.textstyle2}>Info :- Banchi photography,    
-                                                            Nugegoda,
+                    <Text style={styles.textstyle2}>Info :- Flora Flower Shop,    
+                                                            Maharagama,
                                                             Colombo .</Text>
                     <Text style={styles.textstyle2}>Minimum cost :- RS 20000</Text>
                     <Text style={styles.textstyle2}>Contact us :-0776985441</Text>
