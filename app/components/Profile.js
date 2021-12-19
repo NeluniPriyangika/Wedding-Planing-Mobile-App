@@ -7,27 +7,31 @@ import {auth} from './firebase'
 function Profile ({}) {
         return (
           
-            <View style={styles.container}>
+            <ScrollView style={styles.container}>
                 <View style= {styles.container0}>
                     <Image style={styles.image2} source={require('../assets/imges/white.png')}/>
                 </View>
                 <Image style={styles.image1} source={require('../assets/imges/1629171277964.jpg')}/>
-                <TextInput style={styles.input1} 
-                    placeholder="User name"
-                />
-                <TextInput style={styles.input2} 
-                    placeholder="Partner name"
-                />
-                <TextInput style={styles.input2} 
-                    placeholder="Wedding date"
-                />
-                <TextInput style={styles.input2} 
-                    placeholder="Email address"    
-                />
+                
+                <View style={styles.input1}>
+                  <Text style={styles.text2}>Neluni Priyangika</Text>
+                </View> 
+
+                <View style={styles.input2}>
+                  <Text style={styles.text2}>Kasun Gayantha</Text>
+                </View>
+
+                <View style={styles.input2} >
+                  <Text style={styles.text2}>24.03.2022</Text>
+                </View>
+
+                <View style={styles.input2} >
+                  <Text style={styles.text2}>padnp123@gmail.com</Text>
+                </View>
                 <TouchableOpacity style={styles.button1}>    
                     <Text style={styles.buttontext}>Sign Out</Text>
                 </TouchableOpacity>
-            </View>          
+            </ScrollView>          
         );
 }
 
@@ -87,9 +91,9 @@ const styles = StyleSheet.create({
 
     marginTop:50,
     backgroundColor: "white",
-    width:300,
-    height:55,
-    borderRadius:20,
+    width:355,
+    height:75,
+    borderRadius:25,
     alignSelf:"center",
     padding:20,
     borderColor:"#848482",
@@ -101,9 +105,9 @@ const styles = StyleSheet.create({
 
     marginTop:10,
     backgroundColor: "white",
-    width:300,
-    height:55,
-    borderRadius:20,
+    width:355,
+    height:75,
+    borderRadius:25,
     alignSelf:"center",
     padding:20,
     borderColor:"#848482",
@@ -111,8 +115,8 @@ const styles = StyleSheet.create({
   },
 
   button1:{
-    width:250,
-    height:50,
+    width:300,
+    height:70,
     marginTop:50,
     backgroundColor:"#556080",
     borderRadius:500,
@@ -124,10 +128,10 @@ const styles = StyleSheet.create({
 
   buttontext:{
     fontStyle:"italic",
-    fontSize:20,
-    marginTop:10,
+    fontSize:30,
     alignSelf:"center", 
-    color:"black" 
+    color:"black",
+    marginTop:10, 
   },
 
   text1:{
@@ -138,5 +142,12 @@ const styles = StyleSheet.create({
     fontSize:18,
     
   },
+
+  text2:{
+    fontSize:20,
+    marginLeft:15,
+    
+    
+  }
 
 });

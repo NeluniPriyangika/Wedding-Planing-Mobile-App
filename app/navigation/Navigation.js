@@ -31,7 +31,7 @@ function App() {
 
     return (
       <NavigationContainer>
-        <Stack.Navigator headerMode={{}} initialRouteName="RegisterPage">
+        <Stack.Navigator headerMode={{}} initialRouteName="Profile">
           <Stack.Screen name="FirstScreen" component={FirstScreen} />
           <Stack.Screen name="SecondScreen" component={SecondScreen} />
           <Stack.Screen name="ThirdScreen" component={ThirdScreen}  />
