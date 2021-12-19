@@ -18,6 +18,7 @@ import TaskPage from "../components/TaskPage";
 import WeddingDecorations from "../components/WeddingDecorations";
 import Hotels from "../components/Hotels";
 import CateringServicers from "../components/CateringServicers";
+import Profile from "../components/Profile";
 
 
 
@@ -30,7 +31,7 @@ function App() {
 
     return (
       <NavigationContainer>
-        <Stack.Navigator headerMode={{}} initialRouteName="WeddingDecorations">
+        <Stack.Navigator headerMode={{}} initialRouteName="RegisterPage">
           <Stack.Screen name="FirstScreen" component={FirstScreen} />
           <Stack.Screen name="SecondScreen" component={SecondScreen} />
           <Stack.Screen name="ThirdScreen" component={ThirdScreen}  />
@@ -48,7 +49,7 @@ function App() {
           <Stack.Screen name="WeddingDecorations" component={WeddingDecorations} />
           <Stack.Screen name="Hotels" component={Hotels} />
           <Stack.Screen name="CateringServicers" component={CateringServicers} />
-         
+          <Stack.Screen name="Profile" component={Profile} />
           
 
           
