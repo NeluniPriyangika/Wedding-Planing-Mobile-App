@@ -1,5 +1,6 @@
 import React from 'react';
 import {View,Image, StyleSheet,Text, TouchableOpacity} from 'react-native'; 
+import Onboarding from 'react-native-onboarding-swiper';
 
 function SecondScreen ({navigation}) {
 

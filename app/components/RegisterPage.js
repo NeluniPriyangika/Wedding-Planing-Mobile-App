@@ -1,15 +1,25 @@
 import React, { useContext, useState } from 'react';
-import { StyleSheet, Alert, View, Image, TouchableOpacity,Text,TextInput, ScrollView } from 'react-native';
-import {AuthContext} from '../navigation/AuthProvider'
+import { StyleSheet, Alert, View, Image, TouchableOpacity,Text,TextInput, ScrollView,PasswordInputText } from 'react-native';
+import Auth from "@react-native-firebase/app"
+import {auth} from './firebase'
 
 
 function RegisterPage ({navigation}) {
+  const [email,setEmail] = useState('')
+  const [password,setPassword] = useState('')
+   
+   //register user 
 
-   const[email,setEmail]=useState();
-   const[password,setPassword]=useState();
-
-
-   const {register} = useContext(AuthContext)
+   const registration = () =>{
+     auth
+     .createUserWithEmailAndPassword(email,password)
+     .then(userCredentials =>{
+       const user = userCredentials.user;
+     })
+     .catch(error => alert(error.message))
+    
+   }
+  
         return (
           <ScrollView>
             <View style={styles.container}>
@@ -31,13 +41,20 @@ function RegisterPage ({navigation}) {
 
               <TextInput style={styles.input2} 
                 placeholder="Email address"
+                value={email}
+                onChangeText={text=>setEmail(text)}
+                
               />
               <TextInput style={styles.input2} 
                 placeholder="Password"
+                value={password}
+                onChangeText={text=>setPassword(text)}
+                secureTextEntry
               />
+              
 
               <TouchableOpacity style={styles.button1}
-                  onPress={() => register(email,password)}>
+                  onPress={()=>{registration}}>
                   <Text style={styles.buttontext}>Sing Up</Text>
               </TouchableOpacity> 
               <Text style={styles.text1}>Sign up with</Text>

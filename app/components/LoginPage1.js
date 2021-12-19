@@ -1,9 +1,11 @@
-import React from 'react';
-import { StyleSheet, View, Image,Text,TextInput, TouchableOpacity} from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import React, { useContext, useEffect, useState } from 'react';
+import { StyleSheet, View, Image,Text,TextInput, TouchableOpacity,ScrollView} from 'react-native';
+import { AuthContext } from './AuthProvider';
 
 
 function LoginPage1({navigation}){
+  
+  
    
         return (
           <ScrollView>
@@ -14,10 +16,12 @@ function LoginPage1({navigation}){
 
               <Image style={styles.image1} source={require('../assets/imges/user.png')}/>
               <TextInput style={styles.input1} 
+                
                 placeholder="User name"
               />
               <TextInput style={styles.input2} 
                 placeholder="Password"
+                secureTextEntry ={true} 
               />
 
               <TouchableOpacity style={styles.button1}

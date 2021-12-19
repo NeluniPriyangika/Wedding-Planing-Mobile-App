@@ -1,17 +1,20 @@
 // Import the functions you need from the SDKs you need
-import * as firebase from "../../android/app/google-services.json"
+import * as firebase from "@react-native-firebase/app";
+import { initializeApp } from "firebase/app";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAr35dNybkM6Wcm4OnPEisW3fpsrBZKcBw",
-  authDomain: "weddingapp-f5210.firebaseapp.com",
-  projectId: "weddingapp-f5210",
-  storageBucket: "weddingapp-f5210.appspot.com",
-  messagingSenderId: "745312706169",
-  appId: "1:745312706169:web:be1c0b5d709a33e16d3ea8"
-}; 
+  apiKey: "AIzaSyD2UkM92MM5KieQpEcPS1r7BNPCG-f7rK4",
+  authDomain: "mobileapp-a3675.firebaseapp.com",
+  projectId: "mobileapp-a3675",
+  storageBucket: "mobileapp-a3675.appspot.com",
+  messagingSenderId: "140328224289",
+  appId: "1:140328224289:web:d0ca8801aa2560b185c560"
+};
+
 
 // Initialize Firebase
 let app;
