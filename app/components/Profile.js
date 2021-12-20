@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { StyleSheet, Alert, View, Image, TouchableOpacity,Text,TextInput, ScrollView,PasswordInputText } from 'react-native';
 import Auth from "@react-native-firebase/app"
-import {auth} from './firebase'
+import {auth} from './Firebase'
 
 
 function Profile ({}) {

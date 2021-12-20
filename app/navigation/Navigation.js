@@ -19,6 +19,8 @@ import WeddingDecorations from "../components/WeddingDecorations";
 import Hotels from "../components/Hotels";
 import CateringServicers from "../components/CateringServicers";
 import Profile from "../components/Profile";
+import FirebaseEx from "../components/FirebaseEx";
+
 
 
 
@@ -31,7 +33,7 @@ function App() {
 
     return (
       <NavigationContainer>
-        <Stack.Navigator headerMode={{}} initialRouteName="Profile">
+        <Stack.Navigator headerMode={{}} initialRouteName="FirebaseEx">
           <Stack.Screen name="FirstScreen" component={FirstScreen} />
           <Stack.Screen name="SecondScreen" component={SecondScreen} />
           <Stack.Screen name="ThirdScreen" component={ThirdScreen}  />
@@ -50,6 +52,8 @@ function App() {
           <Stack.Screen name="Hotels" component={Hotels} />
           <Stack.Screen name="CateringServicers" component={CateringServicers} />
           <Stack.Screen name="Profile" component={Profile} />
+          <Stack.Screen name="FirebaseEx" component={FirebaseEx} />
+          
           
 
           

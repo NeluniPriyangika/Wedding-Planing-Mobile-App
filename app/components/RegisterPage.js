@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { StyleSheet, Alert, View, Image, TouchableOpacity,Text,TextInput, ScrollView,PasswordInputText } from 'react-native';
-import Auth from "@react-native-firebase/app"
-import {auth} from './firebase'
+
+
 
 
 function RegisterPage ({navigation}) {
@@ -11,14 +11,27 @@ function RegisterPage ({navigation}) {
    //register user 
 
    const registration = () =>{
-     auth
-     .createUserWithEmailAndPassword(email,password)
-     .then(userCredentials =>{
-       const user = userCredentials.user;
-     })
-     .catch(error => alert(error.message))
+    auth()
+    .createUserWithEmailAndPassword(email,password)
+    .then(() => {
+      alert('Function is working');
+    })
+    .catch(error => {
+      if (error.code === 'auth/email-already-in-use') {
+        console.log('That email address is already in use!');
+      }
+  
+      if (error.code === 'auth/invalid-email') {
+        console.log('That email address is invalid!');
+      }
+  
+      console.error(error);
+    });
+     
     
    }
+
+   
   
         return (
           <ScrollView>
